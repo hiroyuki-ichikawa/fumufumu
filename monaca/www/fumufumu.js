@@ -4,7 +4,7 @@
 //////////////////////////////////////////////////////////
 
 // グローバル変数
-var         p_data;                 // JSON地点データの取り込み
+var         p_data = [];            // JSON地点データの取り込み
 var         ymap;                   // Yahoo地図
 var         PosNo = -1;             // 登録番号
 var         GuideText;              // ボタンのテキスト
@@ -255,9 +255,9 @@ function errorFunc( error )
 // オプション・オブジェクト
 ///////////////////////////////////
 var optionObj = {
-	"enableHighAccuracy": false ,
-	"timeout": 1000000 ,
-	"maximumAge": 0 ,
+    "enableHighAccuracy": true ,
+    "timeout": 30000 ,
+    "maximumAge": 0 ,
 } ;
 
 // 現在位置を取得する
